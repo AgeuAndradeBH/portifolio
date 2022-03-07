@@ -131,11 +131,8 @@ header {
     color: #fff;
     text-transform: uppercase;
     background-color: #a8c0ff;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3f2b96, #a8c0ff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: .1rem 3rem;
     border: none;
     border-radius: 5px;
@@ -287,7 +284,90 @@ header {
     margin-top: 1rem;
 }
 
+.sessao-projetos h1{
+  font-size: 3rem;
+  font-family: 'Baloo Da 2';
+  color: black;
+  text-align: center;
+}
 
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.card{
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+}
 
+.card-img-wrapper{
+    width: 100%;
+    height:100%;
+    background-color: #644848;
+    border-radius: 0.8rem;
+}
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+    opacity: .8;
+    border-radius: 0.8rem;
+    transition: opacity .9s;
+}
 
+.card:hover .card-img-wrapper img{
+    opacity: .5rem;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 2rem;
+    text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, .6);
+    transition: all .5s;
+}
+
+.card-info h2{
+    font-family: 'Baloo Da 2';
+    font-size: 2rem;
+    font-weight: 500;
+    color: #eee;
+}
+
+.card-info h3{
+    font-family: 'Baloo Da 2';
+    font-weight: bolder;
+    color: #a8c0ff;
+    margin-bottom: 1.5rem;
+}
+.card-info p{
+    font-family: "Muli";
+    color: #eee;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #a8c0ff;
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+    background: linear-gradient(to right, #3f2b96, #a8c0ff);
+    font-family: 'Muli';
+    font-size: 1rem;
+    color: #eee;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}

@@ -7,3 +7,5 @@ O controle das tarefas desse projeto será realizado no GitHub
 Foi relizado a contrução do menu Side Bar e suas funcionalidades.
 
 #Revisão da terceira ETAPA. Falta alinhar a IMG.
+
+#sessão projetos finalizada
